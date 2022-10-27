@@ -1,8 +1,21 @@
-import React from 'react'
+import { Box } from '@mui/material'
 
 function Menu() {
   return (
-    <div>Menu</div>
+    <Box
+      sx={{
+        backgroundColor: 'black',
+        width: '100%'
+      }}
+    >
+      Popular Items
+      Sides
+      Entree
+      Drinks
+      Potatoes
+      Salads and Gumbo
+      Sandwiches
+    </Box>
   )
 }
 

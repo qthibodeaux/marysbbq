@@ -89,7 +89,7 @@ function Nav() {
                             <Typography textAlign="center">Menu</Typography>
                         </MenuItem>
                         <MenuItem onClick={handleCloseMenu}>
-                            <Typography textAlign="center">Location</Typography>
+                            <Typography textAlign="center">Locations</Typography>
                         </MenuItem>
                         <MenuItem onClick={handleCloseMenu}>
                             <Typography textAlign="center">About</Typography>
@@ -102,13 +102,19 @@ function Nav() {
                         onClick={handleCloseMenu}
                         sx={{ my: 2, color: 'var(--color-2)', display: 'block' }}
                     >
-                        "Products"
+                        Menu
                     </Button>
                     <Button
                         onClick={handleCloseMenu}
                         sx={{ my: 2, color: 'var(--color-2)', display: 'block' }}
                     >
-                        "Shady"
+                        Locations
+                    </Button>
+                    <Button
+                        onClick={handleCloseMenu}
+                        sx={{ my: 2, color: 'var(--color-2)', display: 'block' }}
+                    >
+                        About
                     </Button>
                 </Box>
 
@@ -138,66 +144,3 @@ function Nav() {
 }
 
 export default Nav
-
-/**
- 
-<Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                    <IconButton
-                        size='large'
-                        onClick={handleOpenMenu}
-                        color='var(--color-1)'
-                    >
-                        <RestaurantMenuIcon />
-                    </IconButton>
-                    <Menu
-                        anchorEl={anchorMenu}
-                        anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
-                        keepMounted
-                        transformOrigin={{
-                            vertical: 'top',
-                            horizontal: 'left',
-                          }}
-                        open={Boolean(anchorMenu)}
-                        onClose={handleCloseMenu}
-                    >
-                        <MenuItem  onClick={handleCloseMenu}>
-                          <Typography textAlign='center'>Menu</Typography>
-                        </MenuItem>
-                        <MenuItem  onClick={handleCloseMenu}>
-                          <Typography textAlign='center'>Location</Typography>
-                        </MenuItem>
-                    </Menu>
-                </Box>
-
-
- <Box component='img' sx={{ height: 40, display: { xs: 'flex', md: 'none', ml: 1 } }} alt='Mbbqlogo' src={Mbbqlogo} onClick={handleOpenUser}/>
-                <Typography variant='h5' nowrap href='' sx={{ ml: 2, color: 'var(--color-2)', display: { xs: 'flex', md: 'none'}, flexGrow: 1, fontWeight: 700 }}>
-                    Mary's BBQ
-                </Typography>
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                    <Menu
-                        sx={{ mt: '45px' }}
-                        anchorEl={anchorUser}
-                        anchorOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right'
-                        }}
-                        keepMounted
-                        transformOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                          }}
-                        open={Boolean(anchorUser)}
-                        onClose={handleCloseUser}
-                    >
-                        <MenuItem onClick={handleCloseUser}>
-                            <Typography textAlign='center'>Settings</Typography>
-                        </MenuItem>
-                    </Menu>
-                </Box>
-
-
-
-
-
- */

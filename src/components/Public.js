@@ -2,6 +2,7 @@ import { Box, Grid } from '@mui/material'
 import Hero from './items/Hero'
 import LocationBanner from './items/LocationBanner'
 import Featured from './items/Featured'
+import Menu from './items/Menu'
 
 function Welcome() {
   return (
@@ -15,12 +16,12 @@ function Welcome() {
             padding: '1rem',
             gap: '1rem',
           }}
-      >
-        <Hero />
-        <LocationBanner />
-        <Featured />
-      </Box>
-    
+        >
+          <Hero />
+          <LocationBanner />
+          <Menu />
+          <Featured />
+        </Box>
       </Grid>
     </Grid>
   )
